@@ -1,0 +1,110 @@
+* {
+    margin: 0 auto;
+}
+
+header {
+    background: url(./Imgs/Veg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 25vh;
+    border-bottom: 3px solid black;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #f4f4f4f4;
+    text-shadow: 4px 4px black;
+    font-size: 40px;
+    /* background: -webkit-linear-gradient(right,rgb(73, 44, 100), rgb(216, 141, 54),rgb(226, 60, 60),rgb(196, 196, 53));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 5vh;
+    font-family: 'Indie Flower', cursive;
+    font-size: 28px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    margin: 2rem;
+}
+
+#shopping-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    padding: 0;
+}
+
+.tick {
+    margin-right: 2rem;
+}
+
+#shopping-list li {
+    list-style: none;
+    margin: 0.5rem;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.delete-list-item {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 3rem;
+    border-radius: 10px;
+    outline: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.input {
+    margin-right: 1vw;
+    width: 15rem;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.add-list-item {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    background-color:green;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-list-item {
+        margin-top: 1vh;
+    }
+}
